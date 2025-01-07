@@ -1,9 +1,9 @@
 steps:
-  - name: 'gcr.io/cloud-builders/python'
+  - name: python:3.9.6
     entrypoint: 'pip'
     args: ['install', '-r', 'requirements.txt']
 
 options:
   logging: CLOUD_LOGGING_ONLY
-  
+
 timeout: 1200s
